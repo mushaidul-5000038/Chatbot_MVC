@@ -1,0 +1,58 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I am here to help you navigate through the services offered by Life Hospital Ltd", "Offering support for your inquiries on the services provided by Life Hospital Ltd"],
+         "context": [""]
+        },
+        {"tag": "room",
+         "patterns": ["Any rooms avaiable?", "I wanted to admit a patient", "Are there any rooms available for admitting a patient?", "What are the types of room you offer?"],
+         "responses": ["These are the following types of room we offer ranked from cheap to expensive : (1)Twin shared room, (2)Premium twin shared room, (3)Deluxe room, (4)Suite. To check for the availability please contact 0170******6 "],
+         "context": [""]
+        },
+        {"tag": "emergency",
+         "patterns": ["Is there any ambulance available?", "Please send someone over it is emergency", "What is your ambulance contanct info?", "How do i contact your ambulance?" ],
+         "responses": ["To call for our ambulance please contact 00990***12 "],
+         "context": [""]
+        },
+        {"tag": "gynocologist",
+         "patterns": ["Is there any gynocologist","Please recommend a gynoclogist","Are there any gynocologists"],
+         "responses": ["Yes there are quite a few of the best in the city available in our hospital"],
+         "context": [""]
+        },
+        {"tag": "tests",
+         "patterns": ["Does your hospital provides X-ray tests?", "What are the test you provide?", "Do you provide CT-scan?"],
+         "responses": ["Our hospital provides the following tests for the diagnosis of the patients: X-rays, blood test, CT-scan, Ultrasonogram. "],
+         "context": [""]
+        },
+        {"tag": "insurance",
+         "patterns": ["Can I avail my health care insurance?","Any insurance plans available?"],
+         "responses": ["We do provide health care insurances for the well being of our people. Please contact 099123**12 for inquiries regarding health insurance."],
+         "context": [""]
+        },
+        {"tag": "heart_surgeon",
+                "patterns": ["Is there any heart surgeon","Please recommend a heart surgeon","Are there any heart surgeons"],
+                "responses": ["Yes there are quite a few of the best in the city available in our hospital"],
+                "context": [""]
+               }
+   ]
+}

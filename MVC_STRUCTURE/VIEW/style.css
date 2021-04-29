@@ -1,0 +1,49 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  font-family: arial;
+  overflow: hidden;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: azure;
+}
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.chatbotImage {
+  margin-top: 15px;
+  width: 25%;
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+.chatbotOutputClass {
+  box-sizing: border-box;
+  font-size: 30px;
+  height: 230px;
+  font-family: "Josefin Sans", sans-serif;
+  border-style: dashed;
+  border-color: aqua;
+  padding: 20px;
+  margin: 9px;
+  overflow: auto;
+}
+
+.chatbotInput {
+  margin-top: 10px;
+  width: 55vw;
+  padding: 20px;
+  font-size: 25px;
+}
+
+input,
+span,
+img {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
