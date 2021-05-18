@@ -1,7 +1,3 @@
-import requests
-import string
-from lxml import html
-
 import nltk
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
@@ -53,8 +49,7 @@ def predict_class(sentence):
         return_list.append({"intent": classes[r[0]], "probability": str(r[1])})
     return return_list
 
-def getResponse(ints, intents_json):
-    tag = ints[0]['intent']
+def getResponse(tag, intents_json):
     list_of_intents = intents_json['intents']
     for i in list_of_intents:
         if(i['tag']== tag):
@@ -71,19 +66,18 @@ def send(msg):
 
     if msg != '':
         ints = predict_class(msg)
-        res = getResponse(ints, intents)
+        res = getResponse(ints[0]['intent'], intents)
         return res
     
 
-def chatbot_query(query, index=0):
+def chatbot_query(query):
+    
     fallback = 'Sorry, I cannot think of a reply for that.'
     result = ''
     msg=query.decode()
-    print('Message',msg)
+    print('Message is',msg)
     result='Chatbot: '+send(msg)
     print(result)
     
     return result
-    
-
 

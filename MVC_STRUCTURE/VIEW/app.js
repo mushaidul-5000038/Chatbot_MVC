@@ -19,6 +19,7 @@ function userSubmitEventHandler(event) {
         tag.appendChild(text);
         var element = document.getElementById("chatWindow");
         element.appendChild(tag);
+        window.scrollTo(300, 500);
         askChatBot(chatbotInput.value);
     }
 }
